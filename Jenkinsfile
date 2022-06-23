@@ -1,5 +1,8 @@
 pipeline {
     agent any
+    tools {
+        jdk 'java11'
+    }
     stages {
         stage('Run Agent on docker'){
             steps {
