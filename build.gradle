@@ -17,6 +17,8 @@ repositories {
 }
 
 jar {
+    sourceCompatibility = 11
+    targetCompatibility = 11
     // Include compiled test classes and their sources
     from sourceSets.test.output+sourceSets.test.allSource
 
