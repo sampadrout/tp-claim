@@ -21,8 +21,6 @@ pipeline {
                     // Extra wait for agent on docker become a ready
                     sleep(time: 30, unit: "SECONDS")
                     // Run the test
-                    sh "which java"
-                    sh "echo $JAVA_HOME"
                     sh "${tool 'Gradle'} test"
                 }
             }
