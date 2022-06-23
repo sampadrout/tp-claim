@@ -2,6 +2,7 @@ package io.testproject.generated.tests.serviceprouitest;
 
 import io.testproject.sdk.drivers.ReportType;
 import io.testproject.sdk.drivers.ReportingDriver;
+import io.testproject.sdk.drivers.web.ChromeDriver;
 import io.testproject.sdk.drivers.web.RemoteWebDriver;
 import io.testproject.sdk.interfaces.junit5.ExceptionsReporter;
 import java.lang.Exception;
@@ -34,7 +35,8 @@ public class C57505adminoperatorClaimsDashboardPage implements ExceptionsReporte
   @BeforeAll
   static void setup() throws Exception {
     URL remoteAddress = new URL("http://0.0.0.0:8686");
-    driver = new RemoteWebDriver(new ChromeOptions(), "Sampad Rout", ReportType.LOCAL);
+//    driver = new RemoteWebDriver(remoteAddress, "71tH-tyQRbWL-gZCfrhZWBEPha_v-AGyu1aJGwBnQEY1", new ChromeOptions(), "Sampad Rout", ReportType.LOCAL);
+    driver = new ChromeDriver(new ChromeOptions(), ReportType.LOCAL);
   }
 
   /**
@@ -53,7 +55,7 @@ public class C57505adminoperatorClaimsDashboardPage implements ExceptionsReporte
 
     // 1. This test was auto generated from steps of the 'Claims Archive Dashboard Page' test
     //    This step was auto generated from several steps
-    ((ReportingDriver)driver).report().test("My First Test").submit();
+//    ((ReportingDriver)driver).report().test("My First Test").submit();
 
     GeneratedUtils.sleep(500);
     splogin = new Splogin();
