@@ -33,7 +33,7 @@ public class C57505adminoperatorClaimsDashboardPage implements ExceptionsReporte
 
   @BeforeAll
   static void setup() throws Exception {
-    driver = new RemoteWebDriver("http://localhost:8585", new ChromeOptions(), "Sampad Rout", ReportType.LOCAL);
+    driver = new RemoteWebDriver("71tH-tyQRbWL-gZCfrhZWBEPha_v-AGyu1aJGwBnQEY1", new ChromeOptions(), "Sampad Rout", ReportType.LOCAL);
   }
 
   /**
