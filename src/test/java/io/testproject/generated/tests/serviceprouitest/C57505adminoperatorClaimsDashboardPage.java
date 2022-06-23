@@ -34,7 +34,7 @@ public class C57505adminoperatorClaimsDashboardPage implements ExceptionsReporte
   @BeforeAll
   static void setup() throws Exception {
     URL remoteAddress = new URL("http://0.0.0.0:8686");
-    driver = new RemoteWebDriver(remoteAddress, "71tH-tyQRbWL-gZCfrhZWBEPha_v-AGyu1aJGwBnQEY1", new ChromeOptions(), "Sampad Rout", ReportType.LOCAL);
+    driver = new RemoteWebDriver(new ChromeOptions(), "Sampad Rout", ReportType.LOCAL);
   }
 
   /**
