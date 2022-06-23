@@ -7,6 +7,7 @@ import io.testproject.sdk.interfaces.junit5.ExceptionsReporter;
 import java.lang.Exception;
 import java.lang.Override;
 import java.lang.String;
+import java.net.URL;
 import java.util.concurrent.TimeUnit;
 import java.util.stream.Stream;
 import org.junit.jupiter.api.AfterAll;
@@ -30,10 +31,10 @@ import org.openqa.selenium.chrome.ChromeOptions;
 @DisplayName("C57505_Admin/Operator - Claims Dashboard Page")
 public class C57505adminoperatorClaimsDashboardPage implements ExceptionsReporter {
   public static WebDriver driver;
-
   @BeforeAll
   static void setup() throws Exception {
-    driver = new RemoteWebDriver("http://0.0.0.0:8585", new ChromeOptions(), "Sampad Rout", ReportType.LOCAL);
+    URL remoteAddress = new URL("http://0.0.0.0:8585");
+    driver = new RemoteWebDriver(remoteAddress, "71tH-tyQRbWL-gZCfrhZWBEPha_v-AGyu1aJGwBnQEY1", new ChromeOptions(), "Sampad Rout", ReportType.LOCAL);
   }
 
   /**
